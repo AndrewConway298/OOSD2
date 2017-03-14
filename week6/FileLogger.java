@@ -1,4 +1,4 @@
-public class FileLogger implements Logger{
+public class FileLogger {
 
 	private static FileLogger logger;
 
@@ -13,8 +13,8 @@ public class FileLogger implements Logger{
 	}
 
 	public synchronized void log(String msg) {
-		FileUtil futil = new FileUtil();
-		futil.writeToFile("log.txt", msg, true, true);
+		//FileUtil futil = new FileUtil();
+		//futil.writeToFile("log.txt", msg, true, true);
 	}
 
 }
